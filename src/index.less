@@ -1,0 +1,72 @@
+@import './styles/base.less';
+body {
+    background: #eceff1;
+    font-size: 0.75rem;
+}
+.en-font {
+    font-family: "arial", "sans-serif";
+}
+
+.ant-layout {
+    width: 100%;
+}
+
+:global {
+    .h3c-content {
+        min-height: 794px;
+        height: 100%;
+        display: flex;
+    }
+    #root {
+        width: 100%;
+      //  min-height: 794px;
+    }
+    .ant-spin-container {
+        overflow: visible !important;
+    }
+      
+    .global-spin {
+        width: 100%;
+        margin: 40px 0 !important;
+    }
+    .hmap-popup-closer{
+        position: absolute;
+        right: -182px;
+        top: -274px;
+        z-index: 1000;
+        display: none;
+    } 
+    .hmap-popup-closer:after {
+        content: "\2716";
+        color: #2080da;
+        font-weight: bold;
+    }
+    .chacha{
+        display: none !important;
+    }
+    .hmap-popup{
+        background: rgba(255,255,255,0) !important;
+        border: none !important;
+      }
+    .hmap-popup:before{
+        display: none !important;
+    }
+    .hmap-popup:after{
+        display: none !important;
+    }
+    .hoverTips{
+        padding: 5px;
+        background: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        bottom: 0;
+        p{
+          height: 8px;
+          line-height: 18px;
+          font-size: 10px;
+          color: black;
+        }
+      }
+      .hide{
+          display: none
+      }
+}

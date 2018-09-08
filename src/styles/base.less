@@ -1,0 +1,85 @@
+//base.less
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd{
+    /* 默认有边距，都要清除 */
+    margin: 0;
+    padding: 0;
+    /*字体设置*/
+    font-size: 14px;
+    font-family: "Microsoft Yahei",sans-serif;
+    color: #ccc;
+    /* 去掉列表的原点 */
+    list-style: none;
+    /* 默认鼠标 */
+    cursor: default;
+  }
+  
+  /*行内块元素*/
+  input,img{
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline-style: none;
+    vertical-align: bottom; 
+  }
+  
+  /*行内元素*/
+  a,a:active,a:visited,a:hover{
+    /*下划线和颜色*/
+    text-decoration: none;
+  }
+  
+  textarea{
+    /* 边框清零 */
+    border:none;
+    /* 轮廓线清零 */
+    outline: none;
+    /* 防止文本域被随意拖拽 */
+    resize: none;
+  }
+  
+  i{
+    /*文字样式*/
+    font-style: normal; 
+  }
+  
+  table{
+    /*边框合并*/
+    border-collapse:collapse;
+    border-spacing:0;
+  }
+  
+  :global(.fr){
+    float: right;
+  }
+  /* 使用伪元素清除浮动 */
+  :global(.clearfix::before),
+  :global(.clearfix::after){
+    content:"";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: none;
+    clear: both;
+  }
+  
+  :global(.clearfix) {
+    *zoom: 1;
+  }
+
+  a{
+    text-decoration: none;
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  
+  html {
+    @media screen and (min-width: 1600px), (min-height: 950px ){
+      font-size: 100%; // 16px
+    }
+    @media screen and (max-width: 1599px), (max-height: 949px ) {
+      font-size: 87.5%; // 14px
+    }
+  }

@@ -1,0 +1,301 @@
+.videoSystem{
+    max-width: 1600px;
+    margin: 0 auto;
+    .sidebar{
+        width: 198px;
+        height: 100%;
+        float: left;
+    .contant{
+            
+    }
+    .yunContral{
+        height:240px;
+    }
+    
+    }
+    .videoContainer{
+        padding-left: 198px;
+        height: 100%;
+        width: 100%;
+    }
+
+    
+    :global{
+        .ant-tabs-bar{
+            margin-bottom: 0px;
+        }
+        .ant-tabs-bar .ant-tabs-tab{
+            width: 160px;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 0px;
+            margin-left: -26px;
+            padding: 0px;
+            background: url('../VideoSystem/imgs/select.png');
+        }
+        .ant-tabs-ink-bar{
+            height: 0px;
+        }
+        .ant-tabs-bar  .ant-tabs-tab-active{
+            background: url('../VideoSystem/imgs/select1.png');
+        }
+        .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab{
+            width: 99px;
+            border-radius: 0;
+            margin-right: 0px;
+            border: none;
+        }
+        .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active{
+            background: #1890ff;
+            color: #fff;
+        }
+    }
+}
+
+.videoWrap{
+    :global{
+        .ant-modal-header{
+            padding: 10px 20px;
+            background-color: #d9d9d9;
+        }
+        .ant-modal-body{
+            padding: 24px;
+        }
+        .ant-modal-footer{
+            border-top: none;
+            padding-right:25px;
+            *zoom: 1;
+            &::after{
+                content:"";
+                height: 0;
+                line-height: 0;
+                display: block;
+                visibility: none;
+                clear: both;
+            }
+        }
+        .ant-btn[type="button"]{
+            float: right;
+            margin-right: 10px;
+        }
+    }
+}
+
+.datainput{
+    float: left;
+}
+.loadingPage {
+    position: relative;
+    width: 100% ;
+    height: 645px ;
+    background: url('../VideoSystem/imgs/lodaingpage.png') no-repeat;
+    background-size: 100% 100%;
+    .loadimg {
+        position: absolute;
+        width: 347px;
+        height: 347px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background: url('../VideoSystem/imgs/loadingtip.png') no-repeat;
+        background-size: 100% 100%;
+        z-index: 100 !important;
+    }
+}
+.slider {
+    display: flex;
+    overflow: hidden;
+    height: 20px;
+    background: #fff;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    .begintime {
+        padding: 0 5px;
+    }
+    .endtime {
+       padding:0 5px;
+    }
+    .sliderbox {
+       flex: 1;
+    }
+}
+.slider1 {
+    position: absolute;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    height: 36px;
+    align-items: center;
+    margin: 0 auto;
+    top: 670px !important;
+    left: 200px;
+    .begintime {
+        margin: 3px 5px 0 0;
+    }
+    .endtime {
+        margin: 3px 0 0 5px;
+    }
+    .sliderbox {
+        width: 80% !important;
+    }
+}
+.tool{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+}
+.toolbar{
+    line-height: 38px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    margin-top: -6px;
+    i{
+        vertical-align: middle;
+        display: inline-block;
+        cursor: pointer;
+        transition:all 0.3s;
+        margin-right: 13px;
+    }
+    .magnifier{
+        width: 17px;
+        height: 17px;
+        background:url('../VideoSystem/imgs/fd.png');
+        &:hover {
+            background:url('../VideoSystem/imgs/fdactive.png');
+        }
+    }
+    .in{
+        width: 17px;
+        height: 17px;
+        background:url('../VideoSystem/imgs/in.png');
+        &:hover {
+            background:url('../VideoSystem/imgs/inactive.png');
+        }
+    }
+    .dzzf{
+        width: 16px;
+        height: 14px;
+        background:url('../VideoSystem/imgs/dzzf.png');
+        &:hover {
+            background:url('../VideoSystem/imgs/dzzfactive.png');
+        }
+    }
+    .fullScreen{
+        width: 16px;
+        height: 16px;
+        background:url('../VideoSystem/imgs/fullscreen.png');
+        &:hover {
+            background:url('../VideoSystem/imgs/fullscreenactive.png');
+        }
+    }
+    .bar .fp{
+        width: 18px;
+        height: 18px;
+        background:url('../VideoSystem/imgs/fp.png');
+        &:hover {
+            background:url('../VideoSystem/imgs/fpactive.png');
+        }
+    }
+    .retweet_process {
+        .dzxh{
+            width: 16px;
+            height: 14px;
+            background:url('../VideoSystem/imgs/dzxh.png');
+            &:hover {
+            background:url('../VideoSystem/imgs/dzxhactive.png');
+            }
+        }
+        .backward{
+            width: 22px;
+            height: 14px;
+            background:url('../VideoSystem/imgs/backward.png');
+            &:hover {
+            background:url('../VideoSystem/imgs/backwardactive.png');
+            }
+        }
+        .forward{
+            width: 22px;
+            height: 14px;
+            background:url('../VideoSystem/imgs/forward.png');
+            &:hover {
+            background:url('../VideoSystem/imgs/forwardactive.png');
+            }
+        }
+        .play{
+            width: 32px;
+            height: 32px;
+            background:url('../VideoSystem/imgs/play.png');
+            &:hover {
+            background:url('../VideoSystem/imgs/playactive.png');
+            }
+        }
+        .pause{
+            width: 32px;
+            height: 32px;
+            background:url('../VideoSystem/imgs/pause.png');
+            &:hover {
+            background:url('../VideoSystem/imgs/pauseactive.png');
+            }
+        }
+    }
+    .scrollBar{
+        font-size: 12px;
+        span{
+            padding:1px 4px;
+            color:#939393;
+            border:1px solid #939393;
+            margin-right: 13px;
+            cursor: pointer;
+            &:hover{
+                color:#1890ff;
+                border-color: #1890ff;
+            }
+        }
+    }
+    .process{
+        font-size: 16px;
+        color: #6f6f6f;
+        position: relative;
+        .spend{
+            font-size: 12px;
+            font-weight: 600;
+            color: #999;
+            width: 30px;
+            position: absolute;
+            right: -40px;
+        }
+        :global(.anticon-caret-right){
+            font-size: 18px;
+            margin: 0 10px;
+        }
+        :global(.anticon-pause){
+            font-size: 18px;
+            margin: 0 10px;
+        }
+    }
+}
+
+.fpbox{//分屏
+    z-index: 999;
+    font-size: 12px;
+        span{
+            padding:1px 4px;
+            color:#939393;
+            border:1px solid #939393;
+            margin-right: 13px;
+            cursor: pointer;
+            &:hover{
+                color:#1890ff;
+                border-color: #1890ff;
+            }
+        }
+        span.active{
+            color:#1890ff;
+            border-color: #1890ff;
+        }
+}

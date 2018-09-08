@@ -1,0 +1,363 @@
+ .searchCondition{
+    margin: 10px 10px 0;
+    background-color: #fff;
+    padding: 15px;
+    height: 150px
+  }
+  .blue{
+    width: 4px;
+    background: #2080da;
+    height: 19px;
+    position: relative;
+    margin-right: 7px;
+    display: inline-block;
+    top: 3px; 
+  }
+  .searchCondition_title{
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: 1px solid #f0f2f5;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      height: 35px; 
+  }
+  .carNum{
+        float: left;
+        line-height: 30px;
+        height: 30px;
+        .ant-select{
+            margin-left: 20px;
+            width: 180px;
+            height: 30px;
+            display: inline-block;
+        }
+        .ant-calendar-picker{
+            margin-left: 20px;
+        }
+        .antinput {
+            width: 180px;
+            height: 30px;
+            padding-left: 10px;
+            margin-left: 20px;
+        }
+  } 
+  .wrongLicense{
+    color: red;
+    margin-left: 5px;
+}
+  .searchCondition_content{
+      margin-top: 20px;
+      padding-left: 15px;
+  }
+  .carArea{
+      margin-left: 58px;
+      float: left;
+      line-height: 30px;
+      height: 30px;
+        .antselect{
+            margin-left: 20px;
+            width: 180px;
+            height: 30px;
+            display: inline-block;
+        }
+        .ant-calendar-picker{
+            margin-left: 20px;
+        }
+  }
+  .carTime{
+      margin-left:58px;
+      float: left;
+      line-height: 30px;
+      height: 30px;
+    .carDate{
+      display: inline-block;  
+      margin-left: 20px;
+      span{
+          width: 161px;
+      }
+    }
+  }
+  .ant-select-arrow{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #2080da;
+    color: #fafafa;
+    margin-top: -15px;
+    right: 0px;
+    border-radius: 0px 4px 4px 0px;
+  }
+  .ant-select-selection--single{height: 30px;}
+  .carSearch{
+      float: right;
+      .searchbtn{
+        height: 32px;
+        border: 1px solid #2080da;
+        font-size: 14px;
+        color: white;
+        border-radius: 5px;
+        line-height: 32px;
+        background-color: #2080da;
+        span{
+            position: relative;
+            top:0px;
+            left: 0px;
+        }
+      }
+  }
+  .result{
+    margin: 10px;
+  //  height: 650px;
+    background-color: #fff;
+    // padding: 15px;
+    height: 69%;
+    padding: 15px 15px 10px 15px;
+  }
+  .iconButton{
+      padding-left: 15px;
+      margin-top: 15px;
+        height: 30px;
+      .iconActive{
+          background-color: #2080da;
+          color: white;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          line-height: 38px;
+          float: left;
+          border-radius: 5px; 
+      }
+      .iconNoActive{
+        background-color: none;
+        color: #616161;
+        margin-left: 20px;
+        width: 30px;
+          height: 30px;
+          text-align: center;
+          line-height: 38px;
+          float: left;
+          border-radius: 5px; 
+      }
+      .download{
+          float: right;
+      }
+  }
+  .ant-list{
+      margin-top: 10px;
+  }
+  .listtitle{
+      background-color: #f1f1f1; 
+      display: inline-block;
+      line-height: 45px;
+      border-radius: 5px; 
+      position: relative;
+      white-space: nowrap;
+      word-break: break-all;
+      .more{
+        position: absolute;
+        right: 8px;
+        top: 10px;
+        z-index: 1000;
+      }
+      .showMore{
+        width: 148px;
+        z-index: 999;
+        position: absolute;
+        right: 0px;
+        label{
+            font-size: 10px;
+        }
+      }
+  }
+  :global(.ant-list-split .ant-list-header){
+      border: none;
+      background-color: #f1f1f1;
+      padding: 0px;
+    }
+  :global(.ant-list-header, .ant-list-footer){padding: 0;}
+  .listline1{
+    display: inline-block;
+    text-align: center;
+    // padding: 10px 0;
+}
+
+.boxList{
+
+    &::-webkit-scrollbar 
+    { 
+        width: 12px; 
+        height: 12px; 
+        background-color:transparent;
+    } 
+       
+    &::-webkit-scrollbar-track 
+    { 
+      
+        border-radius: 10px; 
+        background-color: transparent;
+    } 
+       
+    &::-webkit-scrollbar-thumb 
+    { 
+        border-radius: 10px; 
+        box-shadow: inset 0 0 6px rgba(0,0,0,.3); 
+        background-color: #f1f1f1;
+    } 
+
+   
+    :global(.ant-list-item-content){
+    white-space: nowrap;
+    word-break: break-all;
+    margin-bottom: 0px;
+}
+}
+
+
+.list{
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+    &:global(.ant-list-item){
+        border-bottom:none;
+        &:last-child{
+            border-bottom:none !important;
+        }
+    }
+    
+:global(.ant-list-item-content){
+    white-space: nowrap;
+    word-break: break-all;
+}
+}
+.list:hover{
+    background: rgb(192, 222, 247)
+}
+.listDate{
+    // line-height: 110px;
+    line-height: 50px;
+    padding: 0px;
+    border-bottom: 1px solid #e8e8e8;
+    text-align: center;
+    .carColor{
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        position: relative;
+        top: 5px;
+        margin-right: 15px;
+    }
+    img{
+        vertical-align: middle;
+        // width: 100px;
+        // height: 60px;
+        width: 70px;
+        height: 40px;
+    }
+}
+
+//显示面板
+.selectinfo{
+    margin-left: 58px;
+    line-height: 30px;
+    font-size: 16px;
+    color:#666;
+    text-decoration: none;
+}
+
+.panel{
+    width: 600px;
+    background: #fff;
+    border:1px solid #cccccc;
+    box-shadow: 0px 0px 7px -2px #000;
+    border-radius: 4px;
+    padding: 8px;
+    .select{
+        border-bottom: 1px solid #cccccc;
+        padding: 5px 0;
+    }
+    .title{
+        color:#2080da;
+        margin-left: 10px;
+    }
+    .showMore{
+            margin-top: 10px;
+            label{
+                margin: 0px;
+                width: 25%;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+    }
+}
+
+.heightFilter{
+    text-align: center;
+    margin-top: 20px;
+}
+.filterPanel{
+    background: #fff;
+    border:1px solid #e8e8e8;
+    padding: 10px;
+    box-shadow: 0px 0px 7px -2px #000;
+}
+.filterDropdown{
+    color: #666;
+}
+.listheight_car{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 76%;
+    margin-top: 15px;
+    :global(.ant-spin-nested-loading){
+      height: 87%
+    }
+    :global( .ant-list-sm .ant-list-item) {
+      height: 16.66%;
+    }
+    :global(.ant-list-vertical .ant-list-item-content){
+        height: 100%;
+       // display: flex;
+        line-height: 100%
+      }
+  }
+:global(.ant-list){
+    height: 100%;
+  }
+  :global(.ant-list-split .ant-list-header){
+  
+    height: 45px;
+    padding-top: 0px;
+  }
+  :global(.ant-spin-container){
+    height: 100%;
+    border-bottom:none
+  }
+
+  :global(.ant-list-split .ant-list-item:last-child){
+    border-bottom: 1px solid #e8e8e8;
+  }
+.itemRenderFirst {
+    display: inline-block;
+    // margin-top: -10px;
+    margin-right: 8px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    width: 40px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+    color: rgb(89, 89, 89);
+  }
+  .itemRenderLast {
+    display: inline-block;
+    // margin-top: -10px;
+    margin-left: 8px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    width: 40px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+    color: rgb(89, 89, 89);
+  }

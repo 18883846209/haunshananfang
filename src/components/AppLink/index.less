@@ -1,0 +1,108 @@
+.appBtn {
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    opacity: 0.9;
+    position: relative;
+    transition: 0.3s;
+    .close{
+        position: absolute;
+        right: 0px;  
+        top: 0px;  
+        color: transparent;
+        font-size: 14px;
+        &:hover{
+            background-color:rgba(255, 255, 255, 0.4);
+        }
+    }
+    .btn  {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        height: 100%;
+        cursor: pointer;
+    }
+    &:hover{
+        opacity: 1;
+        box-shadow: 1px 1px 9px 1px #8a8989;
+        .close{
+            color:#fff;
+        }
+    }
+}
+
+.middle {
+    width: 168px;
+    height: 130px;
+    .btn {
+        padding-top: 80px;
+        font-size: 18px;
+    }
+}
+
+.small {
+    width: 130px;
+    height: 110px;
+    .btn  {
+        padding-top: 70px;
+        font-size: 16px;
+    }
+}
+
+.icon(@name) {
+    background-position: 50% 30%;
+    background-image: url(@name);
+}
+
+.ajjc {
+    .icon('../AppLink/imgs/ajjc.png');
+}
+
+.cl {
+    .icon('../AppLink/imgs/cl.png');
+}
+
+.cljs {
+    .icon('../AppLink/imgs/cljs.png');
+}
+
+.jia {
+    .icon('../AppLink/imgs/jia.png');
+}
+
+.jksx {
+    .icon('../AppLink/imgs/jksx.png');
+}
+
+.mhcx {
+    .icon('../AppLink/imgs/mhcx.png');
+}
+
+.ryjc {
+    .icon('../AppLink/imgs/ryjc.png');
+}
+
+.xmsk {
+    .icon('../AppLink/imgs/xmsk.png');
+}
+
+.xpxl {
+    .icon('../AppLink/imgs/xpxl.png');
+}
+
+.xwbk {
+    .icon('../AppLink/imgs/xwbk.png');
+}
+
+.zfzx {
+    .icon('../AppLink/imgs/zfzx.png');
+}
+
+.mdkgl {
+    .icon('../AppLink/imgs/mdkgl.png');
+}
+
+.notextIcon{
+    background-position: 50% 50%;
+}

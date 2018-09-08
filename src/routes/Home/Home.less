@@ -1,0 +1,68 @@
+/*
+ * @Author: quezhongyou 
+ * @Date: 2018-08-03 09:01:50 
+ * @Last Modified by: quezhongyou
+ * @Last Modified time: 2018-08-03 14:18:51
+ */
+
+.home {
+    padding: 10px;
+    background: #ebebeb;
+    height: 100%;
+    position: relative;
+    .search{
+        width: 20%;
+        position: absolute;
+        top: 45px;
+        right: 25px;
+    }
+    .seach_icon{
+        color: #bbbbbb;
+        font-size: 16px;
+        margin-right: 5px;
+      }
+    .noSearch{
+        font-size: 20px;
+        margin-top: 65px;
+        color: black;
+      }
+    .back{
+        color: gray;
+        position: absolute;
+        top: 54px;
+        right: 80px;
+        z-index: 100;
+        cursor: pointer;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        background: #fafafa url('../Home/imgs/bg.png') repeat-x;
+        background-position: bottom;
+        padding: 47px 0px;
+        .wrap {
+            width: 1266px;
+            margin: 0 auto;
+            .commonApp {
+                margin-bottom: 90px;
+            }
+            .searchApp{
+                i{
+                    display: none;
+                }
+            }
+            h3 {
+                color: #2080da;
+                font-weight: 600;
+            }
+            .list {
+                margin-left: -50px;
+                margin-top: 30px;
+                &>div {
+                    float: left;
+                    margin-left: 50px;
+                }
+            }
+        }
+    }
+}

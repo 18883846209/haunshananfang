@@ -1,0 +1,30 @@
+.tree{
+    width: 100%;
+    overflow: scroll;
+    :global{
+        .rc-tree-icon__docu {
+            background-position: 0 0;
+            background-image: url('../ResTree/imgs/sxticon.png') !important;
+        }
+        .rc-tree-icon__close , .rc-tree-icon__open {
+            background-position: 0 0;
+            background-image: url('../ResTree/imgs/place.png') !important;
+        }
+        .rc-tree li ul{
+            padding: 0 0 0 11px;
+            margin: 0 0 0 7px;
+        }
+        // .rc-tree li:last-of-type > .rc-tree-child-tree{
+        //     border-left: none;
+        // }
+        .rc-tree-child-tree{
+            border-left: 1px dotted;
+        }
+    }
+}
+.search{
+    padding: 15px 17px;
+}
+:global(.rc-tree li .rc-tree-node-content-wrapper){
+    height: auto !important;
+}

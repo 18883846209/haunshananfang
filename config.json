@@ -1,0 +1,36 @@
+{
+    "development": {
+        "apiOrigin": "",
+        "tree": "http://192.168.110.23",
+        "ocxUrl":"http://192.168.105.202:80",
+        "imageUrl": "",
+        "development": true,
+        "logoUrl":"",
+        "logoText":"",
+        "title":"两江公安视综平台",
+        "videoLogin":{
+            "ip":"192.168.105.140",
+            "port":9002,
+            "number": "admin",
+            "password":""
+        },
+        "mapUrl":"http://192.168.130.99:9091/hgis.js"
+    },
+    "production": {
+        "apiOrigin": "http://192.168.105.191:80",
+        "tree": "http://192.168.105.191",
+        "imageUrl": "",
+        "development": false,
+        "ocxUrl":"http://192.168.105.202:80",
+        "logoUrl":"/logo/logo.png",
+        "title":"两江公安视综平台",
+        "logoText":"",
+        "videoLogin":{
+            "ip":"192.168.105.140",
+            "port":9002,
+            "number": "admin",
+            "password":""
+        },
+        "mapUrl":"http://192.168.130.99:9091/hgis.js"
+    }
+}

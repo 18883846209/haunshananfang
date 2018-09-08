@@ -1,0 +1,22 @@
+{
+    "apps": [
+        {
+            "name": "fe-video-system",
+            "script": "./www",
+            "instances":1,
+            "watch":true,
+            "exec_mode": "cluster",
+            "node_args" : "--harmony",
+            "out_file": "/var/logs/nodejs/fe-video-system/out.log",
+            "error_file": "/var/logs/nodejs/fe-video-system/err.log",
+            "cwd":"./",
+            "env": {
+                "NODE_ENV": "development",
+                "PORT":"8000"
+            },
+            "env_production": {
+                "NODE_ENV": "production"
+            }
+        }
+    ]
+}

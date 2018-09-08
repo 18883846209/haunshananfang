@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="always">
+  <link rel='shortcut icon' href='<$- config.production.logoUrl $>' type='image/x-icon' />
+  </head>
+<body>
+  <div class="h3c-content">
+       <div id="root"></div> 
+      <!--实时 控件无法动态添加，所以没办法先这样吧 start-->
+      <div id='video' style="display: none;">
+        <object id="WebPlayWnd" name="WebPlayWnd" style="width: 100%; height: 645px;display: block;"
+            classid="clsid:E58DE9DD-6C88-42B9-AF3D-EC9AEEFF3630">
+        </object>
+        <object id="WebIC" name="WebIC" style="width: 0px;height: 0px;display: block;"
+            classid="clsid:215271FC-1AFA-4CB9-81F3-A44F7BA079C1">
+        </object>
+      </div>
+      <!--end-->
+       <!--回放 控件无法动态添加，所以没办法先这样吧 start-->
+       <div id='pkVideo' style="display: none;">
+        <object id="pkWebPlayWnd" name="pkWebPlayWnd" style="width: 100%; height: 645px;display: block;"
+            classid="clsid:E58DE9DD-6C88-42B9-AF3D-EC9AEEFF3630">
+        </object>
+        <!-- <object id="pkWebIC" name="pkWebIC" style="width: 0px;height: 0px;display: block;"
+            classid="clsid:215271FC-1AFA-4CB9-81F3-A44F7BA079C1">
+        </object> -->
+      </div>
+      <!--end-->
+       <object id="videoOpenTalk" name="videoOpenTalk" style="width: 0px; height:0px;display: none"
+        classid="clsid:E58DE9DD-6C88-42B9-AF3D-EC9AEEFF3630">
+        </object>
+  </div>
+  <script src="/webplaywnd/index.js"></script>
+  <script src="http://192.168.130.99:9091/hgis.js"></script>
+</body>
+</html>
+ 
+

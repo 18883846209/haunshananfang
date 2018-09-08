@@ -1,0 +1,214 @@
+.yun{
+.title{
+    padding: 5px 8px;
+    background: #e1e1e1;
+    i{
+        background: url('../VideoSystem/imgs/yuntai.png');
+        margin-right: 9px;
+        font-size: 16px;
+        width: 16px;
+        height: 15px;
+        margin-top: -4px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .icon{
+        background:none;
+        float: right;
+        display: inline-block;
+        margin-top: 5px;
+        cursor: pointer;
+        transition: all 0.5s;
+        transform: rotate(-90deg);
+    }
+    .show{
+        transform: rotate(0deg);
+    }
+}
+.body{
+    height: 198px;
+    transition: all 0.5s;
+}
+.hide{
+    height: 0px;
+    overflow: hidden;
+}
+.arrowBox{
+    width: 100px;
+    height: 100px;
+    border:1px solid #e1e1e1;
+    border-radius: 50%;
+    margin: 10px auto;
+    position: relative;
+    background: #fff;
+    .arrows{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 40px;
+        text-align: center;
+        background: #e9e9e9;
+        box-shadow: 0px 0px 0px 1px #e2e2e2;
+        border-radius: 50%;
+        height: 40px;
+        span{
+            display: inline-block;
+            position: absolute;
+            top: 13px;
+            left: 13px;
+            width: 14px;
+            height: 14px;
+        }
+        i{
+            transform: translateY(-38px); 
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+            display: block;
+            &:hover{
+                color:#1890ff;
+            }
+        }
+        :global(.anticon-pause){
+            transform: translate(-1px, -3px);
+            font-size: 16px;
+            font-weight: 600;
+        }
+        :global(.anticon-play-circle-o){
+            transform: translate(-1px, -3px);
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    
+    .arrowup{
+        transform: rotate(0deg);
+        i{
+            background: url('../VideoSystem/imgs/up.png');
+            &:global(.active) , &:hover{
+                background: url('../VideoSystem/imgs/upactive.png'); 
+            }
+        }
+    }
+    .arrowdown{
+        transform: rotate(180deg);
+        i{
+            background: url('../VideoSystem/imgs/up.png');
+            &:global(.active) , &:hover{
+                background: url('../VideoSystem/imgs/upactive.png'); 
+            }
+        }
+    }
+    .arrowleft{
+        transform: rotate(270deg);
+        i{
+            background: url('../VideoSystem/imgs/up.png');
+            &:global(.active) , &:hover{
+                background: url('../VideoSystem/imgs/upactive.png'); 
+            }
+        }
+    }
+    .arrowright{
+        transform: rotate(90deg);
+        i{
+            background: url('../VideoSystem/imgs/up.png');
+            &:global(.active) , &:hover{
+                background: url('../VideoSystem/imgs/upactive.png'); 
+            }
+        }
+    }
+    .arrowstop{
+        i{
+            transform: translateX(-2px) translateY(-2px);
+            background-size: 100% 100%;
+            width: 18px;
+            height: 18px;
+            background: url('../VideoSystem/imgs/stopactive.png');
+            cursor: auto;
+            &:global(.active){
+                cursor: pointer;
+                &:hover{
+                    background: url('../VideoSystem/imgs/stop.png'); 
+                }
+            }
+        }
+    }
+    .arrowstart{
+        i{
+            transform: translateX(-2px) translateY(-2px);
+            background-size: 100% 100%;
+            width: 18px;
+            height: 18px;
+            background: url('../VideoSystem/imgs/start.png');
+            &:global(.active) , &:hover{
+                background: url('../VideoSystem/imgs/startactive.png'); 
+            }
+        }
+    }
+    .up{
+        transform: rotate(45deg);
+    }
+    .down{
+        transform: rotate(225deg);
+    }
+    .left{
+        transform: rotate(315deg);
+    }
+    .right{
+        transform: rotate(135deg);
+    }
+}
+.contral{
+    div{
+        width: 100px;
+        margin: 0 auto 7px;
+        i{
+            background: #95add3;
+            padding: 3px;
+            color: #fff;
+            cursor: pointer;
+            &:hover{
+                background: #1890ff;
+            }
+        }
+        :global(.anticon-plus){
+            border-radius: 0 3px 3px 0;
+            float: left;
+        }
+        :global(.anticon-minus){
+            border-radius: 3px 0 0 3px;
+            float: left;
+        }
+        span{
+            float: left;
+            padding: 0px 18px 0;
+            height: 20px;
+            border-top: 1px solid #95add3;
+            border-bottom: 1px solid #95add3;
+            font-size: 12px;
+        }
+    }
+}
+
+:global{
+    .ant-collapse{
+        border-radius:0px;
+        .ant-collapse-header{
+            padding: 0px;
+            border-radius:0px;   
+            .arrow{
+                right: 18px;
+                left: auto;
+                top: -5px;
+            }
+        }
+        .ant-collapse-content{
+            background-color: #f0f2f5;
+        }
+        .ant-collapse-content-box{
+            padding: 0px;
+        }
+    }
+}
+}
